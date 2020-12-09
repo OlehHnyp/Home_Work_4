@@ -7,10 +7,8 @@ while 1:
     else:
         pass
 
-numbers_list = numbers_input.split()
-for index in range(len(numbers_list)):
-    numbers_list[index] = float(numbers_list[index])
+numbers_list_float = [float(numbers_input.split()[i]) for i in range(len(numbers_input.split()))]
 
 print("Here is a list with your numbers converted to the float type:\n",
-      numbers_list, sep=''
+      numbers_list_float, sep=''
       )

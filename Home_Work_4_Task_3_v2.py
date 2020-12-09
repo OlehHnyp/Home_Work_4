@@ -1,6 +1,7 @@
 while 1:
     try:
-        number = input("Please insert integer number:")
+        number = input("""Please insert integer number and get \
+Fibonacci numbers up to this number:""")
         if int(number) - float(number) == 0 and int(number) == abs(int(number)):
             break
     except ValueError:

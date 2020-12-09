@@ -1,7 +1,9 @@
 while 1:
     try:
         number = input("Please insert a positive integer number:")
-        if int(number) == abs(int(number)):
+        if int(number) == 0:
+            print("Factorial of number 0 is 1")
+        elif int(number) == abs(int(number)):
             break
     except ValueError:
         pass
